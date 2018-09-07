@@ -28,6 +28,6 @@ def moveToCSV():
         dict_writer.writeheader()
         dict_writer.writerows(res)
 sch=BlockingScheduler()
-sch.add_job(getVal,'interval',minutes=10)
+sch.add_job(getVal,'interval',minutes=1)
 sch.start()
 #getVal()
