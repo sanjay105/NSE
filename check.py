@@ -22,7 +22,7 @@ def getVal():
     moveToCSV()
 def moveToCSV():
     keys=res[0].keys()
-    fname='results/'+str(len(res))+"-10min"+'.csv';
+    fname='results/postlunch/'+str(len(res))+"-10min"+'.csv';
     with open(fname,'w') as o:
         dict_writer=csv.DictWriter(o,fieldnames=keys)
         dict_writer.writeheader()
